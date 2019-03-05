@@ -39,7 +39,7 @@ just hardcode `page_id` = "me".
 
 `facebook_token` - facebook access token with publish_action enable. for more visit
 
- Graph API explorerhttps://developers.facebook.com/tools/explorer/145634995501895/
+ Graph API explorer: https://developers.facebook.com/tools/explorer/145634995501895/
 
 ### How to change image size?
 
