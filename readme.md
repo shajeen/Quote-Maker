@@ -7,6 +7,8 @@ Just another python script to automate boring stuff. Quote maker easy to create 
 - textwrap
 - PIL
 
+Install by "pip3 install --upgrade -r requirements.txt"
+
 #### Depended libs
 
 ​	* curl 7.52.1 (x86_64-pc-linux-gnu) 
