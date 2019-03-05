@@ -11,7 +11,7 @@ Install by "pip3 install --upgrade -r requirements.txt"
 
 #### Depended libs
 
-​	* curl 7.52.1 (x86_64-pc-linux-gnu) 
+    * curl 7.52.1 (x86_64-pc-linux-gnu) 
     * libcurl/7.52.1 
     * OpenSSL/1.0.2l 
     * zlib/1.2.8
@@ -28,6 +28,10 @@ run the script by
 ### Output
 
 ![](images/de201299-1307-4b94-856a-da362ea1f1ce.png)
+![](images/406a9722-67fd-4365-b2a1-70dfb5e393e3.png)
+![](images/95128597-da6a-4b4f-af1b-457b452f22d5.png) 
+![](images/8f7e289e-c782-4c4e-af29-9d8b70d4170e.png)
+![](images/9f4bad89-69a6-4cfb-af53-38f64bbd9d99.png)
 
 ### Post to Facebook
 
@@ -39,7 +43,7 @@ just hardcode `page_id` = "me".
 
 `facebook_token` - facebook access token with publish_action enable. for more visit
 
- Graph API explorerhttps://developers.facebook.com/tools/explorer/145634995501895/
+ Graph API explorer: https://developers.facebook.com/tools/explorer/145634995501895/
 
 ### How to change image size?
 
