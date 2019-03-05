@@ -11,7 +11,7 @@ Install by "pip3 install --upgrade -r requirements.txt"
 
 #### Depended libs
 
-	 * curl 7.52.1 (x86_64-pc-linux-gnu) 
+    * curl 7.52.1 (x86_64-pc-linux-gnu) 
     * libcurl/7.52.1 
     * OpenSSL/1.0.2l 
     * zlib/1.2.8
