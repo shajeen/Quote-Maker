@@ -28,6 +28,10 @@ run the script by
 ### Output
 
 ![](images/de201299-1307-4b94-856a-da362ea1f1ce.png)
+![](images/406a9722-67fd-4365-b2a1-70dfb5e393e3.png)
+![](images/95128597-da6a-4b4f-af1b-457b452f22d5.png) 
+![](images/8f7e289e-c782-4c4e-af29-9d8b70d4170e.png)
+![](images/9f4bad89-69a6-4cfb-af53-38f64bbd9d99.png)
 
 ### Post to Facebook
 
