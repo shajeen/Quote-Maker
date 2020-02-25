@@ -7,7 +7,7 @@ Just another python script to automate boring stuff. Quote maker easy to create 
 - textwrap
 - PIL
 
-Install by "pip3 install --upgrade -r requirements.txt"
+Install by "pip3 install --upgrade -r requirements.txt" or "conan install --file requirements.txt"
 
 #### Depended libs
 
@@ -44,6 +44,8 @@ just hardcode `page_id` = "me".
 `facebook_token` - facebook access token with publish_action enable. for more visit
 
  Graph API explorer: https://developers.facebook.com/tools/explorer/145634995501895/
+
+Please uncomment #os.system(command) in main.py
 
 ### How to change image size?
 

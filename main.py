@@ -83,4 +83,4 @@ access_token = facebook_token,
 image_path = image_name,
 message = logo,
 page_id = page_id)
-os.system(command)
+#os.system(command)
