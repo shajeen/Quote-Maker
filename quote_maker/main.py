@@ -65,22 +65,25 @@ def createImage(text, image_name):
     draw.text((10,10), logo, (255,255,255), font=fonts)
     img.save(image_name)
 
-#########################################
-print (100 * "*")
-print ("~~~ quote_maker.py ~~~")
+def main():
+    #########################################
+    print (100 * "*")
+    print ("~~~ quote_maker.py ~~~")
 
-# read quote
-quote_text = str(input("quote: "))
-# create unique name
-image_name = '{name}.png'.format(name = str(uuid.uuid4()))
-# create an image
-createImage(quote_text, image_name)
-logo = "Publish by, " + logo
+    # read quote
+    quote_text = str(input("quote: "))
+    # create unique name
+    image_name = '{name}.png'.format(name = str(uuid.uuid4()))
+    # create an image
+    createImage(quote_text, image_name)
+    logo = "Publish by, " + logo
 
-# post on facebook
-command = "curl -F 'access_token={access_token}' -F 'source=@{image_path}' -F 'method=post' -F 'message={message}' 'https://graph.facebook.com/{page_id}/photos'".format(
-access_token = facebook_token,
-image_path = image_name,
-message = logo,
-page_id = page_id)
-#os.system(command)
+    # post on facebook
+    command = "curl -F 'access_token={access_token}' -F 'source=@{image_path}' -F 'method=post' -F 'message={message}' 'https://graph.facebook.com/{page_id}/photos'".format(
+    access_token = facebook_token,
+    image_path = image_name,
+    message = logo,
+    page_id = page_id)
+    print("Generated curl commnad:")
+    print(command)
+    #os.system(command)
