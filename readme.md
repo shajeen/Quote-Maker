@@ -4,10 +4,19 @@ Just another python script to automate boring stuff. Quote maker easy to create 
 
 #### Depended Python libs
 
-- textwrap
-- PIL
+-Pillow
 
-Install by "pip3 install --upgrade -r requirements.txt" or "conan install --file requirements.txt"
+### Install 
+**manual**
+```sh
+pip3 install --upgrade -r requirements.txt"
+python quote_maker/main.py
+```
+
+**pypi**
+```sh
+pip3 install quote-maker
+```
 
 #### Depended libs
 
