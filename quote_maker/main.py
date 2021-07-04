@@ -17,7 +17,8 @@ import random
 import os
 
 # quote font
-system_font = "fonts/Quote.ttf"
+here = os.path.dirname(os.path.abspath(__file__))
+system_font = os.path.join(here,"fonts/Quote.ttf")
 # font size
 system_font_size = 50
 
@@ -32,7 +33,6 @@ image_size_y = 600  # y
 colors = [(255,0,0), (51, 0, 51), (0,0,255), (0,0,0)]
 
 # facebook settings
-logo = "-MyPage-"           # page name
 page_id = 00000000000000    # page id
 facebook_token = ""	    # access_token
 
@@ -50,7 +50,7 @@ def centerPixel(strlen, line_no):
     temp.append(y - (system_font_size * line_no))
     return temp
 
-def createImage(text, image_name):
+def createImage(text, image_name, logo):
     fonts = ImageFont.truetype(system_font, system_font_size)
     system_color = random.choice(colors)
     img = Image.new(image_type, (image_size_x, image_size_y), (system_color[0], system_color[1], system_color[2]))
@@ -74,10 +74,11 @@ def main():
     quote_text = str(input("quote: "))
     # create unique name
     image_name = '{name}.png'.format(name = str(uuid.uuid4()))
+    logo = "Publish by, " + "-MyPage-"
+    
     # create an image
-    createImage(quote_text, image_name)
-    logo = "Publish by, " + logo
-
+    createImage(quote_text, image_name, logo)
+    
     # post on facebook
     command = "curl -F 'access_token={access_token}' -F 'source=@{image_path}' -F 'method=post' -F 'message={message}' 'https://graph.facebook.com/{page_id}/photos'".format(
     access_token = facebook_token,

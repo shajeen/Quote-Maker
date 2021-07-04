@@ -1,5 +1,5 @@
 [build-system]
-requires = ["flit_core >=2,<4"]
+requires = ["flit_core >=2,<4", "pillow"]
 build-backend = "flit_core.buildapi"
 
 [tool.flit.metadata]
@@ -10,3 +10,5 @@ home-page = "https://github.com/shajeen/Quote-Maker"
 classifiers = [ "License :: OSI Approved :: MIT License",]
 description-file = "readme.md"
 
+[tool.flit.scripts]
+quote-maker = "quote_maker.main:main"
