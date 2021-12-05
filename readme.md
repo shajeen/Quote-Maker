@@ -1,5 +1,4 @@
-# Quote Maker
-
+![Reference (13)](https://user-images.githubusercontent.com/2623563/144739215-6b1cac28-fe6e-4ee0-8355-baa11443b1de.png)
 Just another python script to automate boring stuff. Quote maker easy to create a quoted image and publish to a Facebook page. 
 
 #### Depended Python libs
