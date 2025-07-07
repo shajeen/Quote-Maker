@@ -1,1 +1,8 @@
 dist/*
+build/
+*.so
+*.pyc
+__pycache__/
+*.png
+*.c
+*.egg-info
