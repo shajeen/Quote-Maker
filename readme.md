@@ -42,10 +42,10 @@ A Python script to create quoted images and publish them to a Facebook page.
 
 ## Configuration
 
-Before running the application, you need to configure your Facebook API settings in `config/config.py`:
+Before running the application, you need to configure your Facebook API settings. The `FACEBOOK_PAGE_ID` is set in `config/config.py`, and the `FACEBOOK_ACCESS_TOKEN` should be set as an environment variable named `FACEBOOK_ACCESS_TOKEN` for security reasons.
 
--   `FACEBOOK_PAGE_ID`: Your Facebook page ID.
--   `FACEBOOK_ACCESS_TOKEN`: Your Facebook access token.
+-   `FACEBOOK_PAGE_ID`: Your Facebook page ID (in `config/config.py`).
+-   `FACEBOOK_ACCESS_TOKEN`: Your Facebook access token (set as an environment variable).
 
 ## Usage
 
@@ -55,7 +55,7 @@ To run the application, use the following command:
 python -m src.quote_maker.main
 ```
 
-The script will prompt you to enter a quote, and then it will generate an image and post it to your Facebook page.
+The script will prompt you to enter a quote and a page name. Both inputs are now validated to ensure they are not empty. Then, it will generate an image and, if confirmed by you, attempt to post it to your Facebook page.
 
 ## Running Tests
 
@@ -76,6 +76,7 @@ Quote-Maker/
 │       ├── __init__.py
 │       ├── generator.py
 │       ├── generator_cy.pyx
+│       ├── facebook.py
 │       ├── main.py
 │       └── fonts/
 │           └── Quote.ttf
