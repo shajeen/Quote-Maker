@@ -26,6 +26,14 @@ jobs:
         pip install -r requirements.txt
         pip install build
 
+    - name: Build C extension in place
+      run: |
+        python setup.py build_ext --inplace
+
+    - name: Run tests
+      run: |
+        python -m unittest discover -s tests -p "*.py" -v
+
     - name: Build distribution
       run: python -m build
 
@@ -39,13 +47,3 @@ jobs:
         release_name: Release v${{ github.event.inputs.version }}
         draft: false
         prerelease: false
-
-    - name: Upload Release Asset
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./dist/*.tar.gz
-        asset_name: quote_maker-${{ github.event.inputs.version }}.tar.gz
-        asset_content_type: application/gzip
