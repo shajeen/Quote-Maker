@@ -43,7 +43,7 @@ def main():
 
     # Ask for confirmation to post to Facebook
     post_to_fb = input("Is it ok to post in facebook? (yes/no): ").lower()
-    if post_to_fb == "yes":
+    if post_to_fb.startswith("y"):
         # Post to Facebook
         post_to_facebook(image_name, logo_text)
     else:
