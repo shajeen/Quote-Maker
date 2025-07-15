@@ -54,7 +54,7 @@ def create_quote_image(text: str, logo: str) -> str:
         draw.text((10, 10), logo, font=font, fill=(255, 255, 255))
 
         # Save the image
-        image_name = f"{random.randint(1000, 9999)}.png"
+        image_name = f"{uuid.uuid4()}.png"
         img.save(image_name)
         return image_name
     except Exception as e:
