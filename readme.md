@@ -59,7 +59,7 @@ Key configuration parameters:
 -   `FACEBOOK_ACCESS_TOKEN`: Your Facebook access token (recommended via environment variable).
 -   `DEFAULT_QUOTE_SOURCE`: Default source for quotes (`manual`, `api`, or `file`).
 -   `QUOTE_API_URL`: URL for fetching quotes from an API.
--   `QUOTE_FILE_PATH`: Path to a local JSON file containing quotes.
+-   `QUOTE_FILE_PATH`: Path to a local file containing quotes (e.g., JSON, CSV, or TXT).
 -   `LOG_LEVEL`: Logging level (e.g., `INFO`, `DEBUG`).
 -   `LOG_FILE`: Path to the log file.
 
