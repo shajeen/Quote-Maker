@@ -5,6 +5,7 @@ Image generation logic for the Quote Maker application.
 
 import textwrap
 import random
+import uuid
 from PIL import Image, ImageDraw, ImageFont
 from config import config
 
