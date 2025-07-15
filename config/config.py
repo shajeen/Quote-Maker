@@ -17,4 +17,4 @@ IMAGE_BG_COLORS = [(255, 0, 0), (51, 0, 51), (0, 0, 255), (0, 0, 0)]
 FACEBOOK_PAGE_ID = "your_page_id"
 import os
 
-FACEBOOK_ACCESS_TOKEN = os.environ.get("FACEBOOK_ACCESS_TOKEN", "your_access_token")
+FACEBOOK_ACCESS_TOKEN = os.environ.get("FACEBOOK_ACCESS_TOKEN")
