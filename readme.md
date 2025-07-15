@@ -76,8 +76,8 @@ python -m src.quote_maker.main [OPTIONS]
 -   `--config PATH`: Path to a custom configuration file.
 -   `--quote-source {manual,api,file}`: Specify the source for quotes.
     -   `manual`: Prompts for quote and page name.
-    -   `api`: Fetches a random quote from a configured API.
-    -   `file`: Reads a random quote from a local JSON file.
+    -   `api`: Fetches a random quote from a configured API. Prompts for a page name for the logo.
+    -   `file`: Reads a random quote from a local file (JSON, CSV, or TXT). Prompts for a page name for the logo.
 -   `--quote-file PATH`: Path to the quotes file (required if `--quote-source` is `file`).
 -   `--api-url URL`: API URL for quotes (overrides default if `--quote-source` is `api`).
 -   `--no-post`: Generate image only, do not post to social media.
